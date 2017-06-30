@@ -24,7 +24,7 @@ const server = app.listen(3000, () => {
 })
 
 app.get('/', (req, res, next) => {
-  res.send("shaniqua don't live here no more")
+  res.json("shaniqua don't live here no more")
 })
 
 app.post('/', (req, res, next) => {
