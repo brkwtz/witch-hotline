@@ -31,8 +31,7 @@ app.post('/', (req, res, next) => {
   client.messages.create({
     to: '+1' + req.body.targetPhone,
     from: '+18316618986',
-    body: req.body.messageBody,
-  }, function(err, message) {
-    console.log(req.body)
+    body: req.body.messageBody
   })
+  .then(message => res.send(message.sid))
 })
