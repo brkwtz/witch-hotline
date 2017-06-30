@@ -7,6 +7,10 @@
     "dev": "nodemon app",
     "start": "nodemon app"
   },
+  "engines": {
+    "node": "7.10.0",
+    "npm": "4.2.0"
+  }
   "author": "",
   "license": "ISC",
   "dependencies": {
