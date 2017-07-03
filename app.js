@@ -30,6 +30,7 @@ firebase.auth().onAuthStateChanged(user => user || firebase.auth().signInAnonymo
 
 //listen for changes to sms
 firebase.database().ref('sms').on('child_added', function(snapshot) {
+
   const targetPhone = snapshot.val().targetPhone
   const messageBody = snapshot.val().messageBody
 
